@@ -1,0 +1,13 @@
+// susy shows baseline grid when a parameter named 'base-line-height' exists
+$base-line-height: $line-height-base;
+$susy: (
+	debug: (
+		image: show,
+		color: rgba(255,255,150,.2),
+		output: overlay,
+		toggle: bottom right
+	),
+	columns: 12,
+	gutters: 0.25,
+	global-box-sizing: border-box
+);

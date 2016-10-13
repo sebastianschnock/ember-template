@@ -1,0 +1,12 @@
+{
+  "name": "ember-template",
+  "dependencies": {
+    "ember": "~2.8.0",
+    "ember-cli-shims": "0.1.1"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "susy": "^2.2.12",
+    "modular-scale": "^2.1.3"
+  }
+}
