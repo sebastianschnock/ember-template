@@ -16,3 +16,6 @@ My template for a quick app set up with Ember
 
 # How to use this template
 - change `podModulePrefix` in `environment.js` to your app name
+
+# ToDo
+- use lodash as es6 module: https://github.com/lodash/babel-plugin-lodash
