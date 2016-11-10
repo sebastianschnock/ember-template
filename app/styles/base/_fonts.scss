@@ -1,0 +1,27 @@
+$font-montserrat: 'montserrat', serif;
+$font-raleway: 'raleway', sans-serif;
+
+$font-primary: $font-raleway;
+$font-secondary: $font-montserrat;
+
+@font-face {
+	font-family: 'montserrat';
+	src: url('/assets/fonts/Montserrat-Bold.otf');
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('/assets/fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('/assets/fonts/Raleway-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('/assets/fonts/Raleway-Italic.ttf');
+	font-style: italic;
+}

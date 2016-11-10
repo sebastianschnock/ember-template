@@ -1,0 +1,51 @@
+##{$app} {
+	%button {
+		@include type-setting(m);
+
+		font-family: $font-secondary;
+		cursor: pointer;
+		display: inline-block;
+		margin: 0;
+		padding: 0 1.5em;
+		border: 1px solid $color-border;
+		background: $color-button-default;
+		text-align: center;
+		height: rhythm(2);
+	}
+
+	%button--disabled {
+		@extend %button;
+
+		color: $color-grey-light;
+		border-color: $color-grey;
+	}
+
+	%button--cta {
+		@extend %button;
+
+		color: $color-white;
+		background-color: $color-cta;
+	}
+
+	%button--danger {
+		@extend %button;
+
+		color: $color-white;
+		background-color: $color-danger;
+	}
+
+	%button--nostyle {
+		@extend %button;
+
+		background: 0;
+		border: 0;
+		padding: 0;
+		height: rhythm(1);
+	}
+
+	%button--linkstyle {
+		@extend %button--nostyle;
+
+		@include linkstyle;
+	}
+}

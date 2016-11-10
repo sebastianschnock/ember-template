@@ -11,3 +11,27 @@ $susy: (
 	gutters: 0.25,
 	global-box-sizing: border-box
 );
+
+// debug grid
+$color-grid-overlay-1: rgba(146, 198, 83, 0.5);
+$color-grid-overlay-2: rgba(207, 212, 125, 0.5);
+$color-grid-overlay-3: rgba(32, 54, 18, 0.3);
+
+body.show-grid ##{$app} {
+	position: relative;
+	z-index: 0;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background:
+			repeating-linear-gradient(to right, $color-grid-overlay-1 0%, $color-grid-overlay-1 6.779%, $color-grid-overlay-2 6.779%, $color-grid-overlay-2 8.474%),
+			repeating-linear-gradient(transparent, transparent rhythm(1), $color-grid-overlay-3 rhythm(1), $color-grid-overlay-3 rhythm(2));
+		z-index: 10;
+	}
+}

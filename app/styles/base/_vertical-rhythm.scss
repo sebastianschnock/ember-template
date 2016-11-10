@@ -2,32 +2,32 @@
 //
 // inspired by: https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
 
-
-
 $font-size-base-px: 16px;
 
 // base values for font size and line height
 $font-size-base: 1rem;
-$line-height-base-multiplicator: 1.5;
+$line-height-base-multiplicator: 1.25;
 $line-height-base: $font-size-base * $line-height-base-multiplicator;
 
 // use modular scale mixin to determine font size scaling
 // https://github.com/modularscale/modularscale-sass
-$ms-base: .75em;
+$ms-base: 1rem;
 $ms-ratio: $major-third;
 
 $type-scale: (
-	s: ms(1),
-	m: ms(2),
-	l: ms(3),
-	xl: ms(4)
+	s: ms(-1),
+	m: ms(0),
+	l: ms(1),
+	xl: ms(2),
+	xxl: ms(4),
 );
 
 $line-heights: (
 	s: $line-height-base,
 	m: $line-height-base,
-	l: $line-height-base * 2,
-	xl: $line-height-base * 2
+	l: $line-height-base,
+	xl: $line-height-base * 2,
+	xxl: $line-height-base * 2,
 );
 
 @function type-scale($size) {
@@ -42,13 +42,7 @@ $line-heights: (
 	@return $line-height-base * $lines;
 }
 
-
-
-
-
 // mixins
-
-
 
 @mixin type-setting($size: m) {
 	font-size: type-scale($size);
@@ -69,36 +63,4 @@ $line-heights: (
 
 @mixin trailer-pad($lines: 1) {
 	@include trailer($lines, 'padding');
-}
-
-
-
-
-
-// base grid image for debugging (if the susy one isn't good enough)
-// http://basehold.it/
-
-@mixin baseline-grid($line-height: $font-size-base-px * $line-height-base-multiplicator) {
-
-	position: relative;
-
-	&:after {
-		background: url(http://basehold.it/image.php?height=#{$line-height}&r=255&g=255&b=255) repeat top left;
-		bottom: 0;
-		content: '';
-		display: block;
-		height: auto;
-		left: 0;
-		pointer-events: none;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: auto;
-		z-index: 9999;
-	}
-
-	&:active:after {
-		display: none;
-	}
-
 }

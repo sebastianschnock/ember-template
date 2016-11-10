@@ -10,8 +10,7 @@ module.exports = function(defaults) {
 				'bower_components/susy/sass',
 				'bower_components/breakpoint-sass/stylesheets',
 				'bower_components/modular-scale/stylesheets',
-				'app/pods',
-				'vendor/styles'
+				'app/pods'
 			]
 		}
 	});
@@ -27,7 +26,7 @@ module.exports = function(defaults) {
 	// modules that you would like to import into your application
 	// please specify an object with the list of modules as keys
 	// along with the exports of each module as its value.
-	app.import('reset.css');
+	app.import('vendor/reset-css/reset.css');
 
 	return app.toTree();
 };

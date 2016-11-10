@@ -1,0 +1,9 @@
+##{$app} .ember-template__styles {
+	#new-movie {
+		@extend %box;
+	}
+
+	.the-article {
+		@extend %bg-box;
+	}
+}

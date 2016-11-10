@@ -1,0 +1,11 @@
+##{$app} {
+	%box {
+		border: 1px solid $color-border-light;
+		padding: rhythm(1) 1rem;
+	}
+
+	%bg-box {
+		background: $color-background-darker;
+		padding: rhythm(1) 1rem;
+	}
+}

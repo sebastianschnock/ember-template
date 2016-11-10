@@ -1,0 +1,25 @@
+##{$app} {
+	// buttons
+
+	button.cta {
+		@extend %button--cta;
+	}
+
+	button.danger {
+		@extend %button--danger;
+	}
+
+	button.nostyle {
+		@extend %button--nostyle;
+	}
+
+	button.linkstyle {
+		@extend %button--linkstyle;
+	}
+
+	// links
+
+	a.nostyle {
+		@include nostyle;
+	}
+}

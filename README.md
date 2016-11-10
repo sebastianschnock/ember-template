@@ -2,11 +2,21 @@
 My template for a quick app set up with Ember
 
 # Components installed
-- [sass support](https://github.com/aexmachina/ember-cli-sass)
+
+## Linting
+- [eslint](http://eslint.org/)
+- [stylelint](http://stylelint.io/)
+
+## Layout
 - [susy grid system](http://susy.oddbird.net/)
 - [breakpoint sass](https://github.com/at-import/breakpoint)
 - [modular scale sass](https://github.com/modularscale/modularscale-sass)
+
+## CSS
+- [sass support](https://github.com/aexmachina/ember-cli-sass)
 - [Meyer CSS reset](http://meyerweb.com/eric/tools/css/reset/)
+
+## Ember
 - [ember truth helpers](https://github.com/jmurphyau/ember-truth-helpers)
 - [ember route actions](https://github.com/DockYard/ember-route-action-helper)
 
@@ -19,3 +29,4 @@ My template for a quick app set up with Ember
 
 # ToDo
 - use lodash as es6 module: https://github.com/lodash/babel-plugin-lodash
+- try https://github.com/rwjblue/ember-template-lint

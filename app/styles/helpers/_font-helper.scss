@@ -1,0 +1,18 @@
+@mixin linkstyle {
+	color: $color-link;
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@mixin nostyle {
+	color: $color-body-font;
+	font-weight: initial;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

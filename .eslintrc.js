@@ -35,5 +35,8 @@ module.exports = {
 		'max-params': ['warn', { max: 4 }],
 		'max-len': ['warn', 120],
 		'max-depth': ['warn', { max: 4 }]
+	},
+	globals: {
+		"$": true
 	}
 };
