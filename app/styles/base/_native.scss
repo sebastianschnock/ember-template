@@ -117,6 +117,7 @@ body {
 	input[type='text'] {
 		@include type-setting(l);
 
+		background: none;
 		border: 0;
 		border-bottom: 1px solid $color-grey;
 		padding: 0;

@@ -27,6 +27,7 @@ My template for a quick app set up with Ember
 # How to use this template
 - change `podModulePrefix` in `environment.js` to your app name
 - change your app name in `styles/base/_config.scss`
+- adapt the `app/index.html` to your app name
 - change the id of the main container in `pods/application/template.hbs` to your app name
 - adapt the horizontal grid in `styles/base/_grid.scss` to your needs
 - adapt the vertical grid in `styles/base/_vertical-rhythm.scss` to your needs
