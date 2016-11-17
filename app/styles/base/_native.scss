@@ -180,4 +180,8 @@ body {
 			display: inline-block;
 		}
 	}
+
+	textarea {
+		@include type-setting(m);
+	}
 }
