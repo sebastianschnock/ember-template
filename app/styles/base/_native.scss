@@ -183,5 +183,7 @@ body {
 
 	textarea {
 		@include type-setting(m);
+
+		font-family: $font-primary;
 	}
 }
